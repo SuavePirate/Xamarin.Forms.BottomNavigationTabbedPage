@@ -21,7 +21,7 @@ namespace BottomBarExample.Droid
 
             base.OnCreate(bundle);
 
-            BottomNavigationTabbedPageRenderer.Initialize(this);
+            BottomNavigationTabbedPageRenderer.Initialize();
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 

@@ -19,14 +19,11 @@ namespace Xamarin.Forms.BottomNavigationTabbedPage.Android
     {
         BottomNavigationView _bottomNavigationView;
         IPageController _pageController;
-        IMenu _menu;
         FrameLayout _frameLayout;
         ObservableCollection<IMenuItem> _menuItems;
-        static MenuInflater _menuInflater;
 
-        public static void Initialize(Context context)
+        public static void Initialize()
         {
-            _menuInflater = new MenuInflater(context);
 
         }
 
@@ -163,7 +160,7 @@ namespace Xamarin.Forms.BottomNavigationTabbedPage.Android
 
                     // create bottomBar control
                     _bottomNavigationView = new BottomNavigationView(Context);
-                   
+                    AddView(_bottomNavigationView, 1);
                   
                     _bottomNavigationView.LayoutParameters = new LayoutParams(LayoutParams.MatchParent, LayoutParams.MatchParent);
                     _bottomNavigationView.SetOnNavigationItemSelectedListener(this);

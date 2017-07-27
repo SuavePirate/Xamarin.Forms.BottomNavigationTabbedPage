@@ -8,7 +8,7 @@ namespace BottomBarExample
         {
             InitializeComponent();
 
-            MainPage = new BottomBarExamplePage();
+            MainPage = new NavigationPage(new BottomBarExamplePage());
         }
 
         protected override void OnStart()
