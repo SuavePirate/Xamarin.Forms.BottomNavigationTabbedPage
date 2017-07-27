@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bottomBar:BottomNavigationTabbedPage
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:BottomBarExample"
+    xmlns:bottomBar="clr-namespace:Xamarin.Forms.BottomNavigationTabbedPage;assembly=Xamarin.Forms.BottomNavigationTabbedPage"
+    x:Class="BottomBarExample.BottomBarExamplePage">
+    <ContentPage Title="Page 1">
+        <Label>Page 1</Label>
+    </ContentPage>
+    <ContentPage Title="Page 2">
+        <Label>Page 2</Label>
+    </ContentPage>
+    <ContentPage Title="Page 2">
+        <Label>Page 2</Label>
+    </ContentPage>
+    
+</bottomBar:BottomNavigationTabbedPage>
